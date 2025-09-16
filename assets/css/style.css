@@ -117,4 +117,15 @@ footer {
     .nav-toggle-label {
         display: none;
     }
+
+    #logo {
+        font-size: 280%;
+        line-height: 75px;
+        margin: 0 0.5rem;
+    }
+
+    main {
+        /* Adjust margin to match increased header height */
+        margin-top: 79px;
+    }
 }
