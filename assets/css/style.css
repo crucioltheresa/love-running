@@ -26,6 +26,9 @@ header{
     z-index: 99;
     width: 100%;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
 }
 
 header a{
@@ -62,7 +65,24 @@ nav{
     padding:0 1rem;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     display: none;
+    top:100%; /* this tells the navigation element that the top of the element
+                should start at the bottom of its parent.
+                0% would represent the top of the parent, and 100% represents the bottom of it.*/
 }
+
+/* Nav toggle */
+#nav-toggle:checked~nav{
+    display: block;
+}
+
+#nav-toggle{
+    display: none; /* Hid the checkbox */
+}
+
+.nav-toggle-label{
+    font-size: 2rem;
+}
+
 
 main{
     background-color: lightblue;
