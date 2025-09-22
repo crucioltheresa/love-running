@@ -19,7 +19,9 @@ body {
     font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
     letter-spacing: 2px;
@@ -56,7 +58,7 @@ header a {
 .active {
     border-bottom: 1px solid #252525;
 }
-    
+
 /* Navbar styles with dropdown toggle */
 nav {
     position: absolute;
@@ -97,64 +99,92 @@ main {
 #hero {
     height: 600px;
     width: 100%;
-    background: url('../images/hero-image.webp') no-repeat center center/cover; /*backgorung-repeat  background-position background-size*/
+    background: url('../images/hero-image.webp') no-repeat center center/cover;
+    /*backgorung-repeat  background-position background-size*/
     position: relative;
 }
 
 #cover-text {
-    background-color:rgba(241, 109, 107, .7);
+    background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
     position: absolute;
-    bottom:30px;
+    bottom: 30px;
     width: 80%;
     min-height: 200px;
     padding-top: 40px;
     padding-left: 10px;
 }
 
-#cover-text > h2, #cover-text > h3 {
+#cover-text>h2,
+#cover-text>h3 {
     color: #FFFFFF;
 }
 
-#reasons{
+#reasons {
     width: 90%;
     margin: 20px auto;
 }
 
-#reason h2{
+#reason h2 {
     font-size: 280%;
     margin-bottom: 20px;
     text-align: center;
 }
 
-#benefits-physical > div, #benefits-mental > div{
+#benefits-physical>div,
+#benefits-mental>div {
     margin: 20px;
     line-height: 20px;
 }
 
-#benefits p{
+#benefits p {
     padding: 0 20px;
 }
 
-hr{
+hr {
     border-top: 1px solid #3a3a3a;
     margin: 5px 0;
 }
 
-#circle-cover-bg{
+#circle-cover-bg {
     background: url('../images/reasons-image.webp') no-repeat top center / cover;
     height: 90vw;
     width: 90vw;
     margin-bottom: 20px;
-    border-radius: 50%; /* Makes the square image into a circle */
+    border-radius: 50%;
+    /* Makes the square image into a circle */
     max-width: 300px;
     max-height: 300px;
 }
 
-#benefits-image{
+#benefits-image {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    /* Handles responsivity without the need for a media query */
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: center;
+    /* This will not wrap on screens of less than 400px wide.
+    Each div will expand to fill the available space on its row */
+    flex-basis: 200px;
+    flex-grow: 1;
+    /* Creates a grid of meetup times dives over the background image */
+    border: 2px solid white;
+}
+
+#times h3 {
+    color: #fafafa;
 }
 
 #social-networks {
@@ -201,22 +231,24 @@ hr{
         margin-top: 79px;
     }
 
-    #cover-text{
+    #cover-text {
         width: 300px;
         right: 50px;
     }
 
-    #benefits-physical, #benefits-mental {
+    #benefits-physical,
+    #benefits-mental {
         display: flex;
         flex-direction: column;
         width: 100%;
     }
 
-    #benefits-physical > div, #benefits-mental > div{
+    #benefits-physical>div,
+    #benefits-mental>div {
         width: 75%;
     }
 
-    #benefits-mental > div{
+    #benefits-mental>div {
         text-align: end;
         align-self: flex-end;
     }
@@ -231,23 +263,23 @@ hr{
 }
 
 @media screen and (min-width: 1200px) {
-    #benefits{
+    #benefits {
         display: flex;
     }
 
-    #benefits > div{
-        flex:1;
+    #benefits>div {
+        flex: 1;
     }
 
-    #benefits-mental{
-        order:1;
+    #benefits-mental {
+        order: 1;
     }
 
-    #benefits-mental > div{
+    #benefits-mental>div {
         align-self: flex-start;
     }
 
-    #benefits-physical > div{
+    #benefits-physical>div {
         align-self: flex-end;
     }
 
