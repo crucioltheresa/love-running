@@ -32,6 +32,7 @@ h3 {
     display: none;
 }
 
+/* Header */
 header {
     background-color: #FFFFFF;
     padding: 0 1rem;
@@ -92,7 +93,7 @@ nav {
     font-size: 2rem;
 }
 
-
+/* Main */
 main {
     /* Make main element take up any surplus space to push footer down */
     flex: 1 0 auto;
@@ -191,6 +192,17 @@ hr {
     color: #fafafa;
 }
 
+/* Gallery page */
+#photos img {
+    width: 100%;
+    line-height: 1em;
+}
+
+#photos {
+    line-height: 0;
+}
+
+/* Footer */
 #social-networks {
     text-align: center;
     padding: 20px 0;
